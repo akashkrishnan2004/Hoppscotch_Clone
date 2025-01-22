@@ -1,4 +1,4 @@
-body {  
+body {
   /* background-color: #181818; */
   /* background: #181818; */
 }
@@ -50,7 +50,7 @@ body {
   background-color: #007bff;
   color: white;
   border: none;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   cursor: pointer;
   width: 4rem;
 }
@@ -64,7 +64,6 @@ body {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 4px;
-
 }
 
 .items {
@@ -90,8 +89,8 @@ select {
 
 select {
   height: 2.3rem;
-  border-top-left-radius: .5rem;
-  border-bottom-left-radius: .5rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
   border: 1px solid black;
 }
 
@@ -100,18 +99,18 @@ input {
   height: 2rem;
   outline: none;
   border: 1px solid black;
-  border-top-right-radius: .5rem;
-  border-bottom-right-radius: .5rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
 }
 
 .send-button {
-  margin-left: .5rem;
+  margin-left: 0.5rem;
   height: 2.5rem;
   width: 8rem;
   border: 1px solid white;
   color: white;
   background-color: #007bff;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 button {
@@ -128,9 +127,9 @@ button:hover {
   background-color: #0056b3;
 }
 
-.response-container {
+/* .response-container {
   margin-top: 20px;
-}
+} */
 
 .bottom-items {
   display: flex;
@@ -147,4 +146,25 @@ button:hover {
 .bottom-items .bodyTextArea {
   resize: none;
   height: 10rem;
+}
+
+.response-container {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 16px;
+  background-color: #f9f9f9;
+  overflow-x: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.response-container h3 {
+  margin-top: 0;
+}
+
+.response-container pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: monospace;
+  margin: 0;
 }
