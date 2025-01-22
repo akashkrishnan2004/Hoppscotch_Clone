@@ -97,7 +97,7 @@ function RequestForm() {
 
   return (
     <div className="request-form-container">
-      <h1>Hoppscotch</h1>
+      <h1 className="request-form-container-head1">HOPPSCOTCH</h1>
       <div className="tabs-container">
         {forms.map((form) => (
           <div
