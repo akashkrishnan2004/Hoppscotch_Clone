@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import axios from "axios";
 
@@ -124,25 +123,29 @@ function RequestForm() {
             activeFormId === form.id && (
               <div key={form.id} className="items">
                 <div className="top-items">
-                  <select
-                    value={form.method}
-                    onChange={(e) =>
-                      handleInputChange(form.id, "method", e.target.value)
-                    }
-                  >
-                    <option value="GET">GET</option>
-                    <option value="POST">POST</option>
-                    <option value="PUT">PUT</option>
-                    <option value="DELETE">DELETE</option>
-                  </select>
-                  <input
-                    type="text"
-                    placeholder="Enter URL"
-                    value={form.url}
-                    onChange={(e) =>
-                      handleInputChange(form.id, "url", e.target.value)
-                    }
-                  />
+                  <div className="select-input">
+                    <select
+                      value={form.method}
+                      onChange={(e) =>
+                        handleInputChange(form.id, "method", e.target.value)
+                      }
+                    >
+                      <option value="GET">GET</option>
+                      <option value="POST">POST</option>
+                      <option value="PUT">PUT</option>
+                      <option value="DELETE">DELETE</option>
+                    </select>
+
+                    <input
+                      type="text"
+                      placeholder="Enter URL"
+                      value={form.url}
+                      onChange={(e) =>
+                        handleInputChange(form.id, "url", e.target.value)
+                      }
+                    />
+                  </div>
+
                   <button
                     onClick={() => sendRequest(form.id)}
                     className="send-button"
@@ -186,7 +189,6 @@ function RequestForm() {
 }
 
 export default RequestForm;
-
 
 // import React, { useState } from "react";
 // import axios from "axios";

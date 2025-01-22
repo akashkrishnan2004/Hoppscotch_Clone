@@ -77,6 +77,12 @@ body {
   align-items: center;
 }
 
+.select-input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
 textarea,
 input,
 select {
@@ -170,4 +176,26 @@ button:hover {
   word-wrap: break-word;
   font-family: monospace;
   margin: 0;
+}
+
+
+@media (max-width: 768px) {
+  .top-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .select-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .send-button {
+    width: 100%;
+  }
+
 }
