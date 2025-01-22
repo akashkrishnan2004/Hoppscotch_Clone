@@ -12,6 +12,8 @@ body {
   display: flex;
   align-items: center;
   border-bottom: 2px solid #ccc;
+  overflow-x: scroll;
+  scrollbar-width: none;
 }
 
 .tab {
