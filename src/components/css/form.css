@@ -1,7 +1,7 @@
 body {
   /* background-color: #181818; */
   /* background: #181818; */
-  background-color: #1E1E2F;
+  background-color: #1e1e2f;
 }
 
 .request-form-container {
@@ -11,7 +11,7 @@ body {
 
 .request-form-container-head1 {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .tabs-container {
@@ -104,12 +104,12 @@ select {
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
   border: 1px solid white;
-  background-color: #1E1E2F;
+  background-color: #1e1e2f;
   color: white;
 }
 
 select option {
-  color: white; 
+  color: white;
 }
 
 input {
@@ -119,19 +119,19 @@ input {
   border: 1px solid white;
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
-  background-color: #1E1E2F;
+  background-color: #1e1e2f;
   color: white;
 }
 
 input::placeholder {
-  color: white;
+  color: rgb(136, 136, 136);
 }
 
 .send-button {
   margin-left: 0.5rem;
   height: 2.5rem;
   width: 8rem;
-  border: 1px solid #007bff ;
+  border: 1px solid #007bff;
   color: white;
   background-color: #007bff;
   border-radius: 0.5rem;
@@ -165,21 +165,47 @@ button:hover {
 .bottom-items .headersTextArea {
   resize: none;
   height: 4rem;
-  background-color: #1E1E2F;
+  background-color: #1e1e2f;
   color: white;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .bottom-items .bodyTextArea {
   resize: none;
   height: 10rem;
-  background-color: #1E1E2F;
+  background-color: #1e1e2f;
   color: white;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
-.bottom-items .headersTextArea::placeholder, .bodyTextArea::placeholder {
+.bottom-items .headersTextArea::placeholder,
+.bodyTextArea::placeholder {
+  color: rgb(136, 136, 136);
+}
+
+.toggle-bearer-button {
+  margin-left: 0.5rem;
+  height: 2.5rem;
+  width: 10rem;
+  border: 1px solid #007bff;
   color: white;
+  background-color: #007bff;
+  border-radius: 0.5rem;
+}
+
+.bearer-token-input {
+  height: 5rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  border: 1px solid white;
+  background-color: #1e1e2f;
+  color: white;
+  resize: none;
+}
+
+.bearer-token-input::placeholder {
+  color: rgb(136, 136, 136);
 }
 
 .response-container {
@@ -193,7 +219,7 @@ button:hover {
   scrollbar-width: thin;
   max-height: 300px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background-color: #1E1E2F;
+  background-color: #1e1e2f;
   color: white;
 }
 
@@ -208,7 +234,6 @@ button:hover {
   font-family: monospace;
   margin: 0;
 }
-
 
 @media (max-width: 768px) {
   .top-items {
@@ -227,6 +252,10 @@ button:hover {
 
   .send-button {
     width: 100%;
+    margin-left: 0;
   }
 
+  .toggle-bearer-button {
+    margin-left: 0;
+  }
 }
