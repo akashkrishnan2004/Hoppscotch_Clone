@@ -64,7 +64,6 @@ function RequestForm() {
     try {
       const parsedHeaders = JSON.parse(form.headers || "{}");
 
-      // Include Bearer Token in the headers if provided
       if (form.bearerToken.trim()) {
         parsedHeaders["Authorization"] = `Bearer ${form.bearerToken}`;
       }
